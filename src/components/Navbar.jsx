@@ -20,7 +20,11 @@ export default function Navbar() {
       >
         Home
       </NavLink>
-      <NavLink to="/product" className="text-light">
+      <NavLink
+        to="/product"
+        className="text-light"
+        style={({ isActive }) => (isActive ? ActiveStyle : ActiveNormal)}
+      >
         Product
       </NavLink>
     </div>
