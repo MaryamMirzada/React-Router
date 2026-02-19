@@ -18,13 +18,18 @@ export default function Product() {
           <div className="row">
             {Products.map((pro) => (
               <div className="col-md-4 col-sm-6 mb-4" key={pro.id}>
-                <div className="card p-3 h-100">
-                  <img src={pro.img} alt={pro.name} />
-                  <h6>
+                <div className="card p-3 h-100 text-center">
+                  <img
+                    src={pro.img}
+                    alt={pro.name}
+                    className="card-img-top"
+                    style={{ width: 200, height: 200 }}
+                  />
+                  <h6 className="card-title">
                     <b>{pro.name}</b>
                   </h6>
 
-                  <h6>${pro.price}</h6>
+                  <h6 className="card-subtitle">${pro.price}</h6>
                   <div className="d-flex gap-2">
                     <Link to={`/product/${pro.id}`}>
                       <button className="btn btn-primary">More detail</button>
