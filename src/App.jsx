@@ -9,10 +9,9 @@ function App() {
     <div>
       <MainNavbar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home />} index />
         <Route path="/product" element={<Product />} />
       </Routes>
-      <Home />
     </div>
   );
 }

@@ -1,5 +1,6 @@
 const Products = [{
         "id": 1,
+       "img": "https://tse3.mm.bing.net/th/id/OIP.w6-KvfhX9-q9soqhPcK9GgHaMc?cb=defcachec2&w=1039&h=1745&rs=1&pid=ImgDetMain&o=7&rm=3",
         "name": "iPhone 14 Pro",
         "category": "Mobile",
         "price": 999,
@@ -139,3 +140,4 @@ const Products = [{
         "description": "Full HD smart television with internet and apps."
     }
 ]
+export default Products
